@@ -2,12 +2,19 @@
     font-family: 'Lato';
     src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 }
-  
+
 * {
     font-family: 'Lato', sans-serif;
+    margin: 0px;
 }
 
 header {
     display: flex;
     justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+body {
+    background-image: url('/static/something.png');
 }

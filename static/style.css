@@ -13,6 +13,7 @@ header {
     justify-content: center;
     padding: 20px;
     overflow-y: auto;
+    background-color: rgba(50 50 50 0.5)
 }
 
 body {

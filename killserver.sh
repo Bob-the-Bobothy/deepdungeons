@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm -rf ~/deepdungeons/logs/killserver.log
 
 sudo kill $(sudo lsof -t -i:8000)

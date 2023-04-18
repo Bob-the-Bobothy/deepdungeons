@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm -rf ~/deepdungeons/logs/runserver.log
 
 python ~/deepdungeons/manage.py runserver >> ~/deepdungeons/logs/runserver.log 2>&1 &

@@ -10,11 +10,14 @@
 
 header {
     display: flex;
-    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(50 50 50 / 90%);
     padding: 50px;
-    width: 100%;
     position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 body {
@@ -33,9 +36,7 @@ footer {
 }
 
 .left {
-    display: flex;
-    justify-content: left;
-    align-content: center;
+    flex-grow: 1;
 }
 
 .center {
@@ -46,8 +47,8 @@ footer {
 
 .right {
     display: flex;
-    justify-content: right;
-    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 footer p {
@@ -59,23 +60,23 @@ a {
     text-decoration: none;
 }
 
-.collapsed {
-    display: none;
-}
-
-button.collapse-nav {
-    background-color: rgb(50 50 50 / 100%);
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    font-size: 16px;
-    cursor: pointer;
-    justify-content: right;
-}
-
 nav {
-    justify-content: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    overflow-x: auto;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
 }

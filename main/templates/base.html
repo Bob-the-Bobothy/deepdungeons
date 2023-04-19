@@ -7,13 +7,32 @@
   <meta name="color-scheme" content="dark light">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="DeepDungeons is a work in progress. Check back later for more!">
+  <script src="{% static 'script.js' %}"></script>
   <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
   <link rel="stylesheet" href="{% static 'style.css' %}">
   <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
   <title>DeepDungeons - {% block title %}{% endblock title %}</title>
 </head>
 <body>
-    {% block content %}
-    {% endblock content %}
+  <header>
+    <h1>DeepDungeons</h1>
+    <button id="collapse-nav" class="collapse-nav">&UpArrowDownArrow;</button>
+    <nav id="nav" class="nav">
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  {% block content %}
+
+  {% endblock content %}
+  
+  <footer class="center">
+    <p>DeepDungeons is a work in progress. Check back later for more!</p>
+  </footer>
 </body>
 </html>

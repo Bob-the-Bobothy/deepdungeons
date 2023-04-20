@@ -3,6 +3,36 @@
     src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 }
 
+:root {
+    --padding: 50px;
+    --backtick: inline;
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+/* Your desktop-specific styles here */
+    :root {
+        --padding: 50px;
+        --backtick: inline-block;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    :root {
+        --padding: 30px;
+        --backtick: none;
+    }
+}
+  
+/* Phone styles */
+@media (max-width: 767px) {
+    :root {
+        --padding: 10px;
+        --backtick: none;
+    }
+}  
+
 * {
     font-family: 'Lato', sans-serif;
     margin: 0px;
@@ -14,7 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(50 50 50 / 90%);
-    padding: 50px;
+    padding: var(--padding);
     position: fixed;
     width: 100%;
     top: 0;
@@ -78,4 +108,13 @@ nav {
 nav li {
     display: inline-block;
     margin: 0 10px;
+}
+
+nav li.exists {
+    display: var(--backtick);
+}
+
+header h1 {
+    display: inline-block;
+    box-sizing: border-box;
 }

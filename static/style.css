@@ -9,6 +9,15 @@
     --nav-size: 20px;
 }
 
+.pogger {
+    transition: all 0.5s ease !important;
+}
+
+.pogger:hover {
+    color: rgb(255, 149, 0) !important;
+    --backtick: none !important;
+}
+
 /* Desktop styles */
 @media (min-width: 992px) {
 /* Your desktop-specific styles here */
@@ -116,6 +125,7 @@ nav li {
 
 nav li.exists {
     display: var(--backtick);
+    transition: all 0.5s ease !important;
 }
 
 header h1 {

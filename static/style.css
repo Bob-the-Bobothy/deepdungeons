@@ -56,7 +56,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(50 50 50 / 90%);
+    background-color: rgba(102, 65, 37, 0.9);
     padding: var(--padding);
     position: fixed;
     width: 100%;
@@ -72,7 +72,7 @@ body {
 
 footer {
     display: inline-block;
-    background-color: rgb(50 50 50 / 90%);
+    background-color: rgba(102, 65, 37, 0.9);
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;

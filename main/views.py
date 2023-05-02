@@ -16,14 +16,14 @@ def socials(request):
     return render(request, 'socials.html')
 
 def privacy_policy(request):
-    file_path = 'templates/privacy_policy.md'
+    file_path = 'privacy_policy.md'
     with open(file_path, 'r') as f:
         content = f.read()
     html = markdown(content)
     return render(request, 'privacy_policy.html', {'html': html})
 
 def tos(request):
-    file_path = 'templates/tos.md'
+    file_path = 'tos.md'
     with open(file_path, 'r') as f:
         content = f.read()
     html = markdown(content)

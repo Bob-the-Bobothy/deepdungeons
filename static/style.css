@@ -52,11 +52,26 @@
     color: white;
 }
 
+div.header {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+div.main {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+div.footer {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(102, 65, 37, 0.9);
+    background-color: rgba(50, 50, 50, 0.9);
     padding: var(--padding);
     position: fixed;
     width: 100%;
@@ -72,7 +87,7 @@ body {
 
 footer {
     display: inline-block;
-    background-color: rgba(102, 65, 37, 0.9);
+    background-color: rgba(50, 50, 50, 0.9);
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
@@ -131,4 +146,18 @@ nav li.exists {
 header h1 {
     display: inline-block;
     box-sizing: border-box;
+}
+
+main {
+    box-sizing: border-box;
+    padding: var(--padding);
+    display: inline-block;
+}
+
+main h1 {
+    margin: 20px;
+}
+
+main h2 {
+    margin: 15px;
 }

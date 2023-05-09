@@ -12,8 +12,8 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
 
-def socials(request):
-    return render(request, 'socials.html')
+def download(request):
+    return render(request, 'download.html')
 
 def tos(request):
     return render(request, 'tos.html')

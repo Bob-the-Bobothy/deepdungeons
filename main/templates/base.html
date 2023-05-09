@@ -21,7 +21,7 @@
     </div>
     <nav class="right">
       <ul>
-        <li class="pogger"><a class="pogger" href="{% url 'socials' %}">Socials</a></li>
+        <li class="pogger"><a class="pogger" href="{% url 'download' %}">Download</a></li>
         <li class="exists">|</li>
         <li class="pogger"><a class="pogger" href="{% url 'about' %}">About</a></li>
         <li class="exists">|</li>
@@ -37,10 +37,11 @@
   {% endblock content %}
   </main>
   </div>
-  <div class="footer">
   <footer class="center">
-    <p>DeepDungeons is a work in progress. Check back later for more!</p>
+    <ul>
+      <li><p>DeepDungeons is a work in progress. Check back later for more!</p></li>
+      <li><a class="pogger" href="{% url 'tos'}"><p>Terms of Service</p></a></li>
+    </ul>
   </footer>
-  </div>
 </body>
 </html>

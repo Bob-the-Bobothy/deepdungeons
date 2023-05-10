@@ -93,7 +93,11 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    list-style-type: none;
+}
+
+footer ul {
+    list-style: none;
+    display: inline;
 }
 
 .left {

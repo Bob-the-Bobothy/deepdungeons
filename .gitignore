@@ -1,4 +1,5 @@
-main/__pycache__/
-deepdungeons/__pycache__/
+__pycache__/
+__pycache__/
 db.sqlite3
 logs/
+.venv/

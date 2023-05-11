@@ -10,7 +10,7 @@
 }
 
 .pogger {
-    transition: all 0.5s ease !important;
+    transition: color 0.5s ease !important;
 }
 
 .pogger:hover {
@@ -93,11 +93,12 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
+    list-style: none;
 }
 
-footer ul {
-    list-style: none;
-    display: inline;
+footer li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .left {
@@ -116,7 +117,7 @@ footer ul {
     align-items: center;
 }
 
-footer p {
+footer * {
     font-size: 10px;
 }
 
@@ -125,7 +126,7 @@ a {
     text-decoration: none;
 }
 
-nav {
+header nav {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -138,14 +139,14 @@ nav {
     width: calc(100% - 100px);
 }
 
-nav li {
+header nav li {
     display: inline-block;
     margin: 0 10px;
 }
 
-nav li.exists {
+header nav li.exists {
     display: var(--backtick);
-    transition: all 0.5s ease !important;
+    transition: color 0.5s ease !important;
 }
 
 header h1 {
@@ -157,6 +158,7 @@ main {
     box-sizing: border-box;
     padding: var(--padding);
     display: inline-block;
+    margin: 100px;
 }
 
 main h1 {
@@ -165,4 +167,16 @@ main h1 {
 
 main h2 {
     margin: 15px;
+}
+
+.privacy-policy-wrapper strong {
+    margin: 100px 0px;
+}
+
+.privacy-policy-wrapper p {
+    margin: 25px 0px;
+}
+
+.privacy-policy-wrapper h1 {
+    margin: 25px 0px;
 }

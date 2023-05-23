@@ -158,7 +158,7 @@ main {
     box-sizing: border-box;
     padding: var(--padding);
     display: inline-block;
-    margin: 100px;
+    margin-top: eval(eval(var(--padding) * 4) + 25px);
 }
 
 main h1 {
